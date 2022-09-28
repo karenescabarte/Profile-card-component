@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Font Family 
+font-family: 'Kumbh Sans', sans-serif;
+font-weight: 400, 700;
+*/
+
+:root {
+  --accent-color: hsl(185, 75%, 39%);
+  --primary-color: hsl(229, 23%, 23%);
+  --secondary-color: hsl(227, 10%, 46%);
+  --tertiary-color: hsl(0, 0%, 59%);
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--accent-color);
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  height: 400px;
+  width: 350px;
+  z-index: 1;
+}
+
+.container-top img {
+  border-radius: 20px 20px 0 0;
+}
+
+.container-bottom img {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -40px;
+}
+
+.container-bottom {
+  text-align: center;
+}
+
+.container-bottom span {
+  color: var(--secondary-color, gray);
+  font-weight: 400;
+}
+
+.container-bottom h2 {
+  padding: 10px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.container-bottom h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.container-bottom p {
+  color: var(--secondary-color, gray);
+  padding-bottom: 20px;
+}
+
+.container-bottom .footer {
+  display: inline-block;
+  padding: 10px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.container-bottom .footer p {
+  color: var(--tertiary-color);
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+bottom: 30px;
+}
+.attribution a {
+color: aliceblue;
+  text-decoration: none;
+}
+.attribution a:hover {
+    color: wheat;
+}
+
+.top-bg {
+    position: absolute;
+    left: -300px;
+    top: -520px;
+    overflow: hidden;
+}
+
+.bottom-bg {
+    position: absolute;
+    right: -300px;
+    bottom: -500px;
+    overflow: hidden;
+}
+
+@media (max-width: 575px) and (min-width: 375px) {
+    .top-bg {
+        position: absolute;
+        left: -700px;
+        top: -520px;
+    }
+    
+    .bottom-bg {
+        position: absolute;
+        right: -600px;
+        bottom: -700px;
+    }
+}
